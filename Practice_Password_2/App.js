@@ -6,6 +6,7 @@ inputFd.addEventListener("input", inputHandler)
 
 function inputHandler(e){
     let invalue = e.target.value;
+    
     if(Number(invalue.length) %2 ===0){
       ans.style.color = "green";
     }else{
