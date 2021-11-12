@@ -6,8 +6,26 @@ const btnSub = document.querySelector("#sub");
 const counter = document.querySelector("#counter");
 
 btnAdd.addEventListener("click", addhandler)
-
+btnSub.addEventListener("click", subHandler)
 
 function addhandler(){
-        counter.innerText = Number(counter.innerText)+1;
+        increment(Number(counter.innerText))
+}
+
+function subHandler(){
+        decrement(Number(counter.innerText))
+}
+
+function increment(num){
+        btnSub.disabled = false
+    counter.innerText = num + 1
+}
+
+function decrement(num){
+        if(num < 1) {
+                btnSub.disabled = true
+            } else {
+                btnSub.disabled = false
+                counter.innerText = num - 1;
+            }
 }
