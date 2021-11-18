@@ -7,12 +7,12 @@ const ans = document.querySelector("#ans")
 const obj1 = {
     name: "neeraj",
     age : 22,
-    power : 1000
+    power : 3333
 }
 const obj2= {
     name : "kiran",
     age: 23,
-    power : 200
+    power : 2000
 }
 
 function clickHandler(){
